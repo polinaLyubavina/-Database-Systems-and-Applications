@@ -27,17 +27,24 @@
 ## Part 2 - B+ Tree Index Structures
 
 ### Students table:
-- How many rows of the table can be placed into the first leaf node of the primary index before it will split? You can fit 292 before the node will split
+- How many rows of the table can be placed into the first leaf node of the primary index before it will split? 
+**You can fit 273 before the node will split**
 
-- What is the maximum number of keys stored in an internal node of the primary index? internal nodes have no keys
+- What is the maximum number of keys stored in an internal node of the primary index? 
+**internal nodes have no keys**
 
-- What is the maximum number of rows in the table if the primary index has a height of 1? since the tree has a height of 1, the root node will not contain any key values. Instead, the root node will have pointers to children nodes. These children nodes will each have 292 rows inside them. The maximum number of rows is 85,264
+- What is the maximum number of rows in the table if the primary index has a height of 1? 
+**since the tree has a height of 1, the root node will not contain any key values. Instead, the root node will have pointers to children nodes. These children nodes will each have 273 rows inside them. The maximum number of rows is 79,989**
 
-- What is the minimum number of rows in the table if the primary index has a height of 1? minimum number of rows is 293 rows
+- What is the minimum number of rows in the table if the primary index has a height of 1? 
+**minimum number of rows is 274 rows**
 
-- If there is a secondary index on Grade, what is the maximum number of entries a leaf node can hold in the secondary index? Assuming that a character takes up 1 byte, a leaf node in the secondary index would be able to hold 4096 entries.
+- If there is a secondary index on Grade, what is the maximum number of entries a leaf node can hold in the secondary index? 
+**A leaf node in the secondary index would be able to hold 273 entries.**
 
 ### Another table
-- What is the maximum number of leaf nodes in the primary index if the table contains 48 rows? maximum number of leaf nodes is 4096/128 = 32 
+- What is the maximum number of leaf nodes in the primary index if the table contains 48 rows? 
+**maximum number of leaf nodes is 4096/128 = 32** 
 
-- What is the minimum number of leaf nodes in the primary index if the table contains 48 rows? minimum number of leaf nodes is 4096/128/2 = 16
+- What is the minimum number of leaf nodes in the primary index if the table contains 48 rows? 
+**minimum number of leaf nodes is 4096/128/2 = 16**
